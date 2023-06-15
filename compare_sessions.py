@@ -6,8 +6,8 @@ import cv2
 
 def compare_sessions(userID,expIDs):
     # specify which sessions to compare
-    # userID = 'pmateosaparicio'
-    # expIDs = ['2023-05-30_03_ESMT126', '2023-05-30_04_ESMT126','2023-05-30_05_ESMT126','2023-05-30_06_ESMT126','2023-05-30_07_ESMT126']
+    userID = 'pmateosaparicio'
+    expIDs = ['2023-05-30_03_ESMT126', '2023-05-30_04_ESMT126','2023-05-30_05_ESMT126','2023-05-30_06_ESMT126','2023-05-30_07_ESMT126']
 
     # 
     animalID, remote_repository_root, processed_root, exp_dir_processed, exp_dir_raw = organise_paths.find_paths(userID, expIDs[1])
@@ -78,4 +78,4 @@ def compare_sessions(userID,expIDs):
     # x = 0
 
 if __name__ == "__main__":
-    compare_sessions()
+    compare_sessions('x','y')
